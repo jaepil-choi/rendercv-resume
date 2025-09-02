@@ -1,257 +1,136 @@
 cv:
-  name: Jaepil Choi
-  location: Location
-  email: john.doe@example.com
-  phone: +1-609-999-9995
+  name: 최재필
+  location: 서울, 대한민국
+  email: chljeffreyz@gmail.com
+  phone: +82-10-2589-5000
   website:
-  social_networks:
-    - network: LinkedIn
-      username: john.doe
-    - network: GitHub
-      username: john.doe
   sections:
-    welcome_to_RenderCV!:
-      - '[RenderCV](https://rendercv.com) is a Typst-based CV framework designed for academics and engineers, with Markdown syntax support.'
-      - Each section title is arbitrary. Each section contains a list of entries, and there are 7 different entry types to choose from.
-    education:
-      - institution: Stanford University
-        area: Computer Science
-        degree: PhD
-        date:
-        start_date: 2023-09
+    학력:
+      - institution: KAIST 경영대학
+        area: 금융공학
+        degree: 석사
+        start_date: 2024-03
         end_date: present
-        location: Stanford, CA, USA
-        summary:
-        highlights:
-          - Working on the optimization of autonomous vehicles in urban environments
-      - institution: Boğaziçi University
-        area: Computer Engineering
-        degree: BS
-        date:
-        start_date: 2018-09
-        end_date: 2022-06
-        location: Istanbul, Türkiye
-        summary:
-        highlights:
-          - 'GPA: 3.9/4.0, ranked 1st out of 100 students'
-          - 'Awards: Best Senior Project, High Honor'
-    experience:
-      - company: Company C
-        position: Summer Intern
-        date:
-        start_date: 2024-06
-        end_date: 2024-09
-        location: Livingston, LA, USA
-        summary:
-        highlights:
-          - Developed deep learning models for the detection of gravitational waves in LIGO data
-          - Published [3 peer-reviewed research papers](https://example.com) about the project and results
-      - company: Company B
-        position: Summer Intern
-        date:
-        start_date: 2023-06
-        end_date: 2023-09
-        location: Ankara, Türkiye
-        summary:
-        highlights:
-          - Optimized the production line by 15% by implementing a new scheduling algorithm
-      - company: Company A
-        position: Summer Intern
-        date:
-        start_date: 2022-06
-        end_date: 2022-09
-        location: Istanbul, Türkiye
-        summary:
-        highlights:
-          - Designed an inventory management web application for a warehouse
-    projects:
-      - name: '[Example Project](https://example.com)'
-        date:
-        start_date: 2024-05
+        location: 서울, 대한민국
+      - institution: WorldQuant Online University
+        area: 금융공학
+        degree: 석사
+        start_date: 2023-01
         end_date: present
-        location:
-        summary: A web application for writing essays
+        location: 온라인
+      - institution: 성균관대학교
+        area: 글로벌경제
+        degree: '학사 (부전공: 인포매틱스)'
+        start_date: 2013-03
+        end_date: 2020-08
+        location: 서울, 대한민국
+    자격증:
+      - bullet: 'CFA: 1차 합격 (2019)'
+      - bullet: 'KOFIA: 투자자산운용사 (2019), 파생상품투자권유자문인력 (2023), 펀드투자권유자문인력 (2022)'
+    경력:
+      - company: 메리츠증권
+        position: '트레이딩본부 매크로트레이딩팀 (파트타임, 학업 병행)'
+        start_date: 2025-01
+        end_date: present
+        location: 서울, 대한민국
         highlights:
-          - Launched an [iOS app](https://example.com) in 09/2024 that currently has 10k+ monthly active users
-          - The app is made open-source (3,000+ stars [on GitHub](https://github.com))
-      - name: '[Teaching on Udemy](https://example.com)'
-        date: Fall 2023
-        start_date:
-        end_date:
-        location:
-        summary:
+          - '내부 딜러들이 코딩 없이 글로벌 매크로(채권/주식인덱스/원자재/FX) 전략을 엑셀 함수 입력하듯 만들 수 있는 플랫폼 개발 중'
+          - '다양한 객체지향 디자인패턴을 도입하여 전략/유틸 기능 추가가 용이하고 데이터 쿼리, 전/후처리 등이 설정파일(config) 조작만으로 적용/수정될 수 있도록 확장성을 고민해 설계'
+      - company: Zero One AI
+        position: 금융 리서치 하계 인턴
+        start_date: 2024-07
+        end_date: 2024-08
+        location: 서울, 대한민국
         highlights:
-          - Instructed the "Statics" course on Udemy (60,000+ students, 200,000+ hours watched)
-    skills:
-      - label: Programming
-        details: Proficient with Python, C++, and Git; good understanding of Web, app development, and DevOps
-      - label: Mathematics
-        details: Good understanding of differential equations, calculus, and linear algebra
-      - label: Languages
-        details: 'English (fluent, TOEFL: 118/120), Turkish (native)'
-    publications:
-      - title: 3D Finite Element Analysis of No-Insulation Coils
-        authors:
-          - Frodo Baggins
-          - '***John Doe***'
-          - Samwise Gamgee
-        doi: 10.1109/TASC.2023.3340648
-        url:
-        journal:
-        date: 2004-01
-    extracurricular_activities:
-      - bullet: 'There are 7 unique entry types in RenderCV: *BulletEntry*, *TextEntry*, *EducationEntry*, *ExperienceEntry*, *NormalEntry*, *PublicationEntry*, and *OneLineEntry*.'
-      - bullet: Each entry type has a different structure and layout. This document demonstrates all of them.
-    numbered_entries:
-      - number: This is a numbered entry.
-      - number: This is another numbered entry.
-      - number: This is the third numbered entry.
-    reversed_numbered_entries:
-      - reversed_number: This is a reversed numbered entry.
-      - reversed_number: This is another reversed numbered entry.
-      - reversed_number: This is the third reversed numbered entry.
+          - "AQR 'Replication Crisis' 논문 기반 CRSP & Compustat (WRDS)를 활용한 퀀트 팩터 DB 구축 및 대량 API 문서 전처리를 통한 일별 팩터 데이터 생산용 확장 가능한 API 래퍼 개발"
+      - company: 우리은행
+        position: 마이데이터 사업부 서비스 기획자
+        start_date: 2022-07
+        end_date: 2024-02
+        location: 서울, 대한민국
+        highlights:
+          - "마이데이터 서비스 내 '내 투자 스토리' 개인화 데이터 큐레이션 기능 개발 주도. 스토리보드 작성, SQL/Python 기반 EDA 수행 및 기능 출시 후 푸시 알림 응답률 11% 달성(1만 건 이상 발송 푸시 중 최고)"
+          - '출시 후 A/B 테스트를 통해 KPI 개선 효과 통계적 검증'
+          - '가입 관련 KPI 정의, SQL 활용 데이터 추출, 관리자 대시보드 설계를 통한 성과 모니터링 체계 구축'
+      - company: 우리은행
+        position: 지점 근무
+        start_date: 2021-09
+        end_date: 2022-03
+        location: 서울, 대한민국
+        highlights:
+          - 'Excel 기반 기업대출 KPI 계산기를 개발하여, 지점장님의 기업 대출 실행 여부 의사결정 지원'
+          - '사내 제안광장에 30건 이상의 시스템·프로세스 개선안을 올려 우수 제안상 2위 수상 (입사 후 3개월 이내)'
+      - company: HaaFor Research Korea
+        position: 퀀트 리서치 인턴
+        start_date: 2020-06
+        end_date: 2020-11
+        location: 서울, 대한민국
+        highlights:
+          - '미국 주식 4,000+ 종목에 대한 대체 데이터 리서치 및 특허·뉴스·온라인 지표 활용 신규 데이터셋 구축해 다른 퀀트 리서쳐들의 상관관계 낮은 알파 전략 개발 지원'
+          - '일단위 리밸런싱 주기의 시장/섹터/팩터 중립적인 롱숏 알파 전략 개발 경험'
+    프로젝트:
+      - name: kor-quant-dataloader
+        highlights:
+          - '생존 편향을 제거하고 데이터 로드 편의성을 높인 한국 주식 데이터셋 파이썬 패키지 개발 (KRX 데이터)'
+          - '날짜 범위만 지정하면 long format: 날짜-종목 인덱스, 각종 팩터 컬럼 형식 또는 wide format: 날짜 인덱스, 종목 컬럼 형식으로 데이터 반환'
+      - name: qtrsch
+        highlights:
+          - '한국 주식 데이터로 파마-프렌치 5요인 모형 직접 구축 후 FnGuide 벤치마크와 팩터 수익률 검증'
+          - '팩터 기반 요소로 수익률 분해, Group Neutralization 효과 분석'
+          - '한국 시장에서 PEAD(실적발표 후 주가이상현상) 현상 심층 분석 및 실적 발표 전후 누적 수익률 시각화'
+      - name: '학술 논문 구현: 텍스트 마이닝을 활용한 금융통화위원회 의사록 분석 (2019)'
+        highlights:
+          - '텍스트 마이닝 기법으로 금융통화위원회 의사록의 톤(매파/비둘기파)을 측정하고 정책금리 변동과의 상관관계 분석'
+    추가정보:
+      - label: 기술
+        details: 'Python, Oracle SQL, Git-flow, 웹 스크래핑, MS-Office'
+      - label: 언어
+        details: '영어 (TOEIC 985, TOEIC Speaking 180), 독일어 (Zertifikat Deutsch B1)'
+      - label: 병역
+        details: '의무경찰 병장 만기전역 (2014년 9월 - 2016년 6월)'
+
 design:
-  theme: classic
-  page:
-    size: us-letter
-    top_margin: 2cm
-    bottom_margin: 2cm
-    left_margin: 2cm
-    right_margin: 2cm
-    show_page_numbering: true
-    show_last_updated_date: true
-  colors:
-    text: rgb(0, 0, 0)
-    name: rgb(0, 79, 144)
-    connections: rgb(0, 79, 144)
-    section_titles: rgb(0, 79, 144)
-    links: rgb(0, 79, 144)
-    last_updated_date_and_page_numbering: rgb(128, 128, 128)
-  text:
-    font_family: Source Sans 3
-    font_size: 10pt
-    leading: 0.6em
-    alignment: justified
-    date_and_location_column_alignment: right
-  links:
-    underline: false
-    use_external_link_icon: true
-  header:
-    name_font_family: Source Sans 3
-    name_font_size: 30pt
-    name_bold: true
-    photo_width: 3.5cm
-    vertical_space_between_name_and_connections: 0.7cm
-    vertical_space_between_connections_and_first_section: 0.7cm
-    horizontal_space_between_connections: 0.5cm
-    connections_font_family: Source Sans 3
-    separator_between_connections: ''
-    use_icons_for_connections: true
-    alignment: center
-  section_titles:
-    type: with-parial-line
-    font_family: Source Sans 3
-    font_size: 1.4em
-    bold: true
-    small_caps: false
-    line_thickness: 0.5pt
-    vertical_space_above: 0.5cm
-    vertical_space_below: 0.3cm
-  entries:
-    date_and_location_width: 4.15cm
-    left_and_right_margin: 0.2cm
-    horizontal_space_between_columns: 0.1cm
-    vertical_space_between_entries: 1.2em
-    allow_page_break_in_sections: true
-    allow_page_break_in_entries: true
-    short_second_row: false
-    show_time_spans_in: []
-  highlights:
-    bullet: •
-    top_margin: 0.25cm
-    left_margin: 0.4cm
-    vertical_space_between_highlights: 0.25cm
-    horizontal_space_between_bullet_and_highlight: 0.5em
-    summary_left_margin: 0cm
-  entry_types:
-    one_line_entry:
-      template: '**LABEL:** DETAILS'
-    education_entry:
-      main_column_first_row_template: '**INSTITUTION**, AREA'
-      degree_column_template: '**DEGREE**'
-      degree_column_width: 1cm
-      main_column_second_row_template: |-
-        SUMMARY
-        HIGHLIGHTS
-      date_and_location_column_template: |-
-        LOCATION
-        DATE
-    normal_entry:
-      main_column_first_row_template: '**NAME**'
-      main_column_second_row_template: |-
-        SUMMARY
-        HIGHLIGHTS
-      date_and_location_column_template: |-
-        LOCATION
-        DATE
-    experience_entry:
-      main_column_first_row_template: '**COMPANY**, POSITION'
-      main_column_second_row_template: |-
-        SUMMARY
-        HIGHLIGHTS
-      date_and_location_column_template: |-
-        LOCATION
-        DATE
-    publication_entry:
-      main_column_first_row_template: '**TITLE**'
-      main_column_second_row_template: |-
-        AUTHORS
-        URL (JOURNAL)
-      main_column_second_row_without_journal_template: |-
-        AUTHORS
-        URL
-      main_column_second_row_without_url_template: |-
-        AUTHORS
-        JOURNAL
-      date_and_location_column_template: DATE
+  theme: engineeringresumes
+
 locale:
-  language: en
+  language: ko
   phone_number_format: national
-  page_numbering_template: NAME - Page PAGE_NUMBER of TOTAL_PAGES
-  last_updated_date_template: Last updated in TODAY
-  date_template: MONTH_ABBREVIATION YEAR
-  month: month
-  months: months
-  year: year
-  years: years
-  present: present
+  page_numbering_template: 'NAME - 페이지 PAGE_NUMBER / TOTAL_PAGES'
+  last_updated_date_template: '최종 업데이트: TODAY'
+  date_template: 'YEAR년 MONTH월'
+  month: 월
+  months: 개월
+  year: 년
+  years: 년
+  present: 현재
   to: –
   abbreviations_for_months:
-    - Jan
-    - Feb
-    - Mar
-    - Apr
-    - May
-    - June
-    - July
-    - Aug
-    - Sept
-    - Oct
-    - Nov
-    - Dec
+    - 1월
+    - 2월
+    - 3월
+    - 4월
+    - 5월
+    - 6월
+    - 7월
+    - 8월
+    - 9월
+    - 10월
+    - 11월
+    - 12월
   full_names_of_months:
-    - January
-    - February
-    - March
-    - April
-    - May
-    - June
-    - July
-    - August
-    - September
-    - October
-    - November
-    - December
+    - 1월
+    - 2월
+    - 3월
+    - 4월
+    - 5월
+    - 6월
+    - 7월
+    - 8월
+    - 9월
+    - 10월
+    - 11월
+    - 12월
+
 rendercv_settings:
   date: '2025-09-01'
   render_command:
