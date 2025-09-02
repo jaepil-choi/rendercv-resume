@@ -1,63 +1,72 @@
 
+((* set page_numbering_template_placeholders = {
+    "NAME": cv.name,
+    "PAGE_NUMBER": "\" + str(here().page()) + \"",
+    "TOTAL_PAGES": "\" + str(counter(page).final().first()) + \"",
+    "TODAY": today
+} *))
+((* set last_updated_date_template_placeholders = {
+    "TODAY": today,
+} *))
 #import "@preview/fontawesome:0.5.0": fa-icon
 
-#let name = "Jaepil Choi"
-#let locale-catalog-page-numbering-style = context { "Jaepil Choi - Page " + str(here().page()) + " of " + str(counter(page).final().first()) + "" }
-#let locale-catalog-last-updated-date-style = "Last updated in Sept 2025"
-#let locale-catalog-language = "en"
-#let design-page-size = "us-letter"
-#let design-section-titles-font-size = 1.4em
-#let design-colors-text = rgb(0, 0, 0)
-#let design-colors-section-titles = rgb(0, 79, 144)
-#let design-colors-last-updated-date-and-page-numbering = rgb(128, 128, 128)
-#let design-colors-name = rgb(0, 79, 144)
-#let design-colors-connections = rgb(0, 79, 144)
-#let design-colors-links = rgb(0, 79, 144)
-#let design-section-titles-font-family = "Source Sans 3"
-#let design-section-titles-bold = true
-#let design-section-titles-line-thickness = 0.5pt
-#let design-section-titles-font-size = 1.4em
-#let design-section-titles-type = "with-parial-line"
-#let design-section-titles-vertical-space-above = 0.5cm
-#let design-section-titles-vertical-space-below = 0.3cm
-#let design-section-titles-small-caps = false
-#let design-links-use-external-link-icon = true
-#let design-text-font-size = 10pt
-#let design-text-leading = 0.6em
-#let design-text-font-family = "Source Sans 3"
-#let design-text-alignment = "justified"
-#let design-text-date-and-location-column-alignment = right
-#let design-header-photo-width = 3.5cm
-#let design-header-use-icons-for-connections = true
-#let design-header-name-font-family = "Source Sans 3"
-#let design-header-name-font-size = 30pt
-#let design-header-name-bold = true
-#let design-header-connections-font-family = "Source Sans 3"
-#let design-header-vertical-space-between-name-and-connections = 0.7cm
-#let design-header-vertical-space-between-connections-and-first-section = 0.7cm
-#let design-header-use-icons-for-connections = true
-#let design-header-horizontal-space-between-connections = 0.5cm
-#let design-header-separator-between-connections = ""
-#let design-header-alignment = center
-#let design-highlights-summary-left-margin = 0cm
-#let design-highlights-bullet = "•"
-#let design-highlights-top-margin = 0.25cm
-#let design-highlights-left-margin = 0.4cm
-#let design-highlights-vertical-space-between-highlights = 0.25cm
-#let design-highlights-horizontal-space-between-bullet-and-highlights = 0.5em
-#let design-entries-vertical-space-between-entries = 1.2em
-#let design-entries-date-and-location-width = 4.15cm
-#let design-entries-allow-page-break-in-entries = true
-#let design-entries-horizontal-space-between-columns = 0.1cm
-#let design-entries-left-and-right-margin = 0.2cm
-#let design-page-top-margin = 2cm
-#let design-page-bottom-margin = 2cm
-#let design-page-left-margin = 2cm
-#let design-page-right-margin = 2cm
-#let design-page-show-last-updated-date = true
-#let design-page-show-page-numbering = true
-#let design-links-underline = false
-#let design-entry-types-education-entry-degree-column-width = 1cm
+#let name = "<<cv.name|remove_typst_commands>>"
+#let locale-catalog-page-numbering-style = context { "<<locale.page_numbering_template|replace_placeholders_with_actual_values(page_numbering_template_placeholders)>>" }
+#let locale-catalog-last-updated-date-style = "<<locale.last_updated_date_template|replace_placeholders_with_actual_values(last_updated_date_template_placeholders)>>"
+#let locale-catalog-language = "<<locale.language>>"
+#let design-page-size = "<<design.page.size>>"
+#let design-section-titles-font-size = <<design.section_titles.font_size>>
+#let design-colors-text = <<design.colors.text.as_rgb()>>
+#let design-colors-section-titles = <<design.colors.section_titles.as_rgb()>>
+#let design-colors-last-updated-date-and-page-numbering = <<design.colors.last_updated_date_and_page_numbering.as_rgb()>>
+#let design-colors-name = <<design.colors.name.as_rgb()>>
+#let design-colors-connections = <<design.colors.connections.as_rgb()>>
+#let design-colors-links = <<design.colors.links.as_rgb()>>
+#let design-section-titles-font-family = "<<design.section_titles.font_family>>"
+#let design-section-titles-bold = <<design.section_titles.bold|lower>>
+#let design-section-titles-line-thickness = <<design.section_titles.line_thickness>>
+#let design-section-titles-font-size = <<design.section_titles.font_size>>
+#let design-section-titles-type = "<<design.section_titles.type>>"
+#let design-section-titles-vertical-space-above = <<design.section_titles.vertical_space_above>>
+#let design-section-titles-vertical-space-below = <<design.section_titles.vertical_space_below>>
+#let design-section-titles-small-caps = <<design.section_titles.small_caps|lower>>
+#let design-links-use-external-link-icon = <<design.links.use_external_link_icon|lower>>
+#let design-text-font-size = <<design.text.font_size>>
+#let design-text-leading = <<design.text.leading>>
+#let design-text-font-family = "<<design.text.font_family>>"
+#let design-text-alignment = "<<design.text.alignment>>"
+#let design-text-date-and-location-column-alignment = <<design.text.date_and_location_column_alignment>>
+#let design-header-photo-width = <<design.header.photo_width>>
+#let design-header-use-icons-for-connections = <<design.header.use_icons_for_connections|lower>>
+#let design-header-name-font-family = "<<design.header.name_font_family>>"
+#let design-header-name-font-size = <<design.header.name_font_size>>
+#let design-header-name-bold = <<design.header.name_bold|lower>>
+#let design-header-connections-font-family = "<<design.header.connections_font_family>>"
+#let design-header-vertical-space-between-name-and-connections = <<design.header.vertical_space_between_name_and_connections>>
+#let design-header-vertical-space-between-connections-and-first-section = <<design.header.vertical_space_between_connections_and_first_section>>
+#let design-header-use-icons-for-connections = <<design.header.use_icons_for_connections|lower>>
+#let design-header-horizontal-space-between-connections = <<design.header.horizontal_space_between_connections>>
+#let design-header-separator-between-connections = "<<design.header.separator_between_connections>>"
+#let design-header-alignment = <<design.header.alignment>>
+#let design-highlights-summary-left-margin = <<design.highlights.summary_left_margin>>
+#let design-highlights-bullet = "<<design.highlights.bullet>>"
+#let design-highlights-top-margin = <<design.highlights.top_margin>>
+#let design-highlights-left-margin = <<design.highlights.left_margin>>
+#let design-highlights-vertical-space-between-highlights = <<design.highlights.vertical_space_between_highlights>>
+#let design-highlights-horizontal-space-between-bullet-and-highlights = <<design.highlights.horizontal_space_between_bullet_and_highlight>>
+#let design-entries-vertical-space-between-entries = <<design.entries.vertical_space_between_entries>>
+#let design-entries-date-and-location-width = <<design.entries.date_and_location_width>>
+#let design-entries-allow-page-break-in-entries = <<design.entries.allow_page_break_in_entries|lower>>
+#let design-entries-horizontal-space-between-columns = <<design.entries.horizontal_space_between_columns>>
+#let design-entries-left-and-right-margin = <<design.entries.left_and_right_margin>>
+#let design-page-top-margin = <<design.page.top_margin>>
+#let design-page-bottom-margin = <<design.page.bottom_margin>>
+#let design-page-left-margin = <<design.page.left_margin>>
+#let design-page-right-margin = <<design.page.right_margin>>
+#let design-page-show-last-updated-date = <<design.page.show_last_updated_date|lower>>
+#let design-page-show-page-numbering = <<design.page.show_page_numbering|lower>>
+#let design-links-underline = <<design.links.underline|lower>>
+#let design-entry-types-education-entry-degree-column-width = <<design.entry_types.education_entry.degree_column_width>>
 #let date = datetime.today()
 
 // Metadata:
@@ -313,7 +322,11 @@
     let ending-index = starting-index + 1
     while (
       measure(connections-list.slice(starting-index, ending-index).join(separator)).width
+      ((* if cv.photo *))
+        < page.width - left-sum-right-margin - design-header-photo-width * 1.1
+      ((* else *))
         < page.width - left-sum-right-margin
+      ((* endif *))
     ) {
       ending-index = ending-index + 1
       if ending-index > connections-list.len() {
@@ -446,232 +459,3 @@
     width: 100%,
   )
 ]
-
-= Jaepil Choi
-
-// Print connections:
-#let connections-list = (
-  [#fa-icon("location-dot", size: 0.9em) #h(0.05cm)Location],
-  [#box(original-link("mailto:john.doe@example.com")[#fa-icon("envelope", size: 0.9em) #h(0.05cm)john.doe\@example.com])],
-  [#box(original-link("tel:+1-609-999-9995")[#fa-icon("phone", size: 0.9em) #h(0.05cm)\(609\) 999-9995])],
-  [#box(original-link("https://linkedin.com/in/john.doe")[#fa-icon("linkedin", size: 0.9em) #h(0.05cm)john.doe])],
-  [#box(original-link("https://github.com/john.doe")[#fa-icon("github", size: 0.9em) #h(0.05cm)john.doe])],
-)
-#connections(connections-list)
-
-
-
-== Welcome to RenderCV!
-
-
-#one-col-entry(
-  content: [#link("https://rendercv.com")[RenderCV] is a Typst-based CV framework designed for academics and engineers, with Markdown syntax support.]
-)
-#v(design-entries-vertical-space-between-entries)
-#one-col-entry(
-  content: [Each section title is arbitrary. Each section contains a list of entries, and there are 7 different entry types to choose from.]
-)
-
-
-== Education
-
-
-// YES DATE, YES DEGREE
-#three-col-entry(
-  left-column-width: 1cm,
-  left-content: [#strong[PhD]],
-  middle-content: [
-    #strong[Stanford University], Computer Science
-    #v(-design-text-leading)
-
-    #v(design-highlights-top-margin);#highlights([Working on the optimization of autonomous vehicles in urban environments],)
-  ],
-  right-content: [
-    Stanford, CA, USA
-
-Sept 2023 – present
-  ],
-)
-
-#v(design-entries-vertical-space-between-entries)
-// YES DATE, YES DEGREE
-#three-col-entry(
-  left-column-width: 1cm,
-  left-content: [#strong[BS]],
-  middle-content: [
-    #strong[Boğaziçi University], Computer Engineering
-    #v(-design-text-leading)
-
-    #v(design-highlights-top-margin);#highlights([GPA: 3.9\/4.0, ranked 1st out of 100 students],[Awards: Best Senior Project, High Honor],)
-  ],
-  right-content: [
-    Istanbul, Türkiye
-
-Sept 2018 – June 2022
-  ],
-)
-
-
-
-== Experience
-
-
-#two-col-entry(
-  left-content: [
-    #strong[Company C], Summer Intern
-    #v(-design-text-leading)
-
-    #v(design-highlights-top-margin);#highlights([Developed deep learning models for the detection of gravitational waves in LIGO data],[Published #link("https://example.com")[3 peer-reviewed research papers] about the project and results],)
-  ],
-  right-content: [
-    Livingston, LA, USA
-
-June 2024 – Sept 2024
-  ],
-)
-
-#v(design-entries-vertical-space-between-entries)
-#two-col-entry(
-  left-content: [
-    #strong[Company B], Summer Intern
-    #v(-design-text-leading)
-
-    #v(design-highlights-top-margin);#highlights([Optimized the production line by 15\% by implementing a new scheduling algorithm],)
-  ],
-  right-content: [
-    Ankara, Türkiye
-
-June 2023 – Sept 2023
-  ],
-)
-
-#v(design-entries-vertical-space-between-entries)
-#two-col-entry(
-  left-content: [
-    #strong[Company A], Summer Intern
-    #v(-design-text-leading)
-
-    #v(design-highlights-top-margin);#highlights([Designed an inventory management web application for a warehouse],)
-  ],
-  right-content: [
-    Istanbul, Türkiye
-
-June 2022 – Sept 2022
-  ],
-)
-
-
-
-== Projects
-
-
-#two-col-entry(
-  left-content: [
-    #link("https://example.com")[#strong[Example Project]]
-  ],
-  right-content: [
-    May 2024 – present
-  ],
-)
-#one-col-entry(
-  content: [
-    #two-col(left-column-width: design-highlights-summary-left-margin, right-column-width: 1fr, left-content: [], right-content: [#v(design-highlights-top-margin);#align(left, [A web application for writing essays])], column-gutter: 0cm)
-
-#v(-design-text-leading)  #v(design-highlights-top-margin);#highlights([Launched an #link("https://example.com")[iOS app] in 09\/2024 that currently has 10k+ monthly active users],[The app is made open-source \(3,000+ stars #link("https://github.com")[on GitHub]\)],)
-  ],
-)
-
-#v(design-entries-vertical-space-between-entries)
-#two-col-entry(
-  left-content: [
-    #link("https://example.com")[#strong[Teaching on Udemy]]
-  ],
-  right-content: [
-    Fall 2023
-  ],
-)
-#one-col-entry(
-  content: [
-    #v(design-highlights-top-margin);#highlights([Instructed the \"Statics\" course on Udemy \(60,000+ students, 200,000+ hours watched\)],)
-  ],
-)
-
-
-
-== Skills
-
-
-#one-col-entry(
-  content: [#strong[Programming:] Proficient with Python, C++, and Git; good understanding of Web, app development, and DevOps]
-)
-#v(design-entries-vertical-space-between-entries)
-#one-col-entry(
-  content: [#strong[Mathematics:] Good understanding of differential equations, calculus, and linear algebra]
-)
-#v(design-entries-vertical-space-between-entries)
-#one-col-entry(
-  content: [#strong[Languages:] English \(fluent, TOEFL: 118\/120\), Turkish \(native\)]
-)
-
-
-== Publications
-
-
-#two-col-entry(
-  left-content: [
-    #strong[3D Finite Element Analysis of No-Insulation Coils]
-
-  ],
-  right-content: [
-    Jan 2004
-  ],
-)
-#one-col-entry(content:[
-#v(design-highlights-top-margin);Frodo Baggins, #strong[#emph[John Doe]], Samwise Gamgee
-
-#v(design-highlights-top-margin - design-text-leading)#link("https://doi.org/10.1109/TASC.2023.3340648")[10.1109/TASC.2023.3340648]])
-
-
-
-== Extracurricular Activities
-
-
-#one-col-entry(
-  content: [- There are 7 unique entry types in RenderCV: #emph[BulletEntry], #emph[TextEntry], #emph[EducationEntry], #emph[ExperienceEntry], #emph[NormalEntry], #emph[PublicationEntry], and #emph[OneLineEntry].],
-)
-#v(design-entries-vertical-space-between-entries)
-#one-col-entry(
-  content: [- Each entry type has a different structure and layout. This document demonstrates all of them.],
-)
-
-
-== Numbered Entries
-#one-col-entry(
-  content: [
-
-
-+ This is a numbered entry.
-+ This is another numbered entry.
-+ This is the third numbered entry.
-
-  ],
-)
-
-== Reversed Numbered Entries
-#one-col-entry(
-  content: [
-    #let rev-enum-items = (
-
-
-[This is a reversed numbered entry.],
-[This is another reversed numbered entry.],
-[This is the third reversed numbered entry.],
-
-  )
-  #enum(
-    numbering: n => [#{rev-enum-items.len() + 1 - n}.],
-    ..rev-enum-items,
-  )
-  ],
-)
-
