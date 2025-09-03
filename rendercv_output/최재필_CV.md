@@ -5,28 +5,29 @@
 - Location: 서울, 대한민국
 
 
-# 학력
+# Education & Certificates
 
 ## KAIST 경영대학, 석사 in 금융공학
 
 - 2024년 3월 – 현재
 - 서울, 대한민국
 
-## WorldQuant Online University, 석사 in 금융공학
+## WorldQuant Online University, 석사 in Financial Engineering
 
 - 2023년 1월 – 현재
 - 온라인
 
-## 성균관대학교, 학사 (부전공: 인포매틱스) in 글로벌경제
+## 성균관대학교, 학사 in Global Economics, (부전공: Informatics)
 
 - 2013년 3월 – 2020년 8월
 - 서울, 대한민국
 
-# 자격증
+## Certificates, 
 
 - CFA: 1차 합격 (2019)
 - KOFIA: 투자자산운용사 (2019), 파생상품투자권유자문인력 (2023), 펀드투자권유자문인력 (2022)
-# 경력
+
+# Work Experience
 
 ## 메리츠증권, 트레이딩본부 매크로트레이딩팀 (파트타임, 학업 병행)
 
@@ -63,7 +64,7 @@
 - 미국 주식 4,000+ 종목에 대한 대체 데이터 리서치 및 특허·뉴스·온라인 지표 활용 신규 데이터셋 구축해 다른 퀀트 리서쳐들의 상관관계 낮은 알파 전략 개발 지원
 - 일단위 리밸런싱 주기의 시장/섹터/팩터 중립적인 롱숏 알파 전략 개발 경험
 
-# 프로젝트
+# Projects
 
 ## kor-quant-dataloader
 
@@ -80,7 +81,7 @@
 
 - 텍스트 마이닝 기법으로 금융통화위원회 의사록의 톤(매파/비둘기파)을 측정하고 정책금리 변동과의 상관관계 분석
 
-# 추가정보
+# Additional Information
 
 - 기술: Python, Oracle SQL, Git-flow, 웹 스크래핑, MS-Office
 - 언어: 영어 (TOEIC 985, TOEIC Speaking 180), 독일어 (Zertifikat Deutsch B1)

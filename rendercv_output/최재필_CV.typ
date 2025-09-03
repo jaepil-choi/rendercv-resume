@@ -13,7 +13,7 @@
 #let design-colors-name = rgb(0, 0, 0)
 #let design-colors-connections = rgb(0, 0, 0)
 #let design-colors-links = rgb(0, 0, 0)
-#let design-section-titles-font-family = "XCharter"
+#let design-section-titles-font-family = "Noto Sans"
 #let design-section-titles-bold = true
 #let design-section-titles-line-thickness = 0.5pt
 #let design-section-titles-font-size = 1.2em
@@ -24,15 +24,15 @@
 #let design-links-use-external-link-icon = false
 #let design-text-font-size = 10pt
 #let design-text-leading = 0.6em
-#let design-text-font-family = "XCharter"
-#let design-text-alignment = "justified"
+#let design-text-font-family = "Noto Sans"
+#let design-text-alignment = "left"
 #let design-text-date-and-location-column-alignment = right
 #let design-header-photo-width = 3.5cm
 #let design-header-use-icons-for-connections = false
-#let design-header-name-font-family = "XCharter"
+#let design-header-name-font-family = "Noto Sans"
 #let design-header-name-font-size = 25pt
 #let design-header-name-bold = false
-#let design-header-connections-font-family = "XCharter"
+#let design-header-connections-font-family = "Noto Sans"
 #let design-header-vertical-space-between-name-and-connections = 0.7cm
 #let design-header-vertical-space-between-connections-and-first-section = 0.7cm
 #let design-header-use-icons-for-connections = false
@@ -50,10 +50,10 @@
 #let design-entries-allow-page-break-in-entries = true
 #let design-entries-horizontal-space-between-columns = 0.1cm
 #let design-entries-left-and-right-margin = 0cm
-#let design-page-top-margin = 2cm
-#let design-page-bottom-margin = 2cm
-#let design-page-left-margin = 2cm
-#let design-page-right-margin = 2cm
+#let design-page-top-margin = 1cm
+#let design-page-bottom-margin = 1cm
+#let design-page-left-margin = 1cm
+#let design-page-right-margin = 1cm
 #let design-page-show-last-updated-date = true
 #let design-page-show-page-numbering = false
 #let design-links-underline = true
@@ -459,13 +459,13 @@
 
 
 
-== 학력
+== Education & Certificates
 
 
 // YES DATE, NO DEGREE
 #two-col-entry(
   left-content: [
-    #strong[KAIST 경영대학], 석사 in 금융공학 -- 서울, 대한민국
+    #strong[KAIST 경영대학], 석사, 금융공학
   ],
   right-content: [
     2024년 3월 – 현재
@@ -486,7 +486,7 @@
 // YES DATE, NO DEGREE
 #two-col-entry(
   left-content: [
-    #strong[WorldQuant Online University], 석사 in 금융공학 -- 온라인
+    #strong[WorldQuant Online University], 석사, Financial Engineering
   ],
   right-content: [
     2023년 1월 – 현재
@@ -507,7 +507,7 @@
 // YES DATE, NO DEGREE
 #two-col-entry(
   left-content: [
-    #strong[성균관대학교], 학사 \(부전공: 인포매틱스\) in 글로벌경제 -- 서울, 대한민국
+    #strong[성균관대학교], 학사, Global Economics, \(부전공: Informatics\)
   ],
   right-content: [
     2013년 3월 – 2020년 8월
@@ -524,26 +524,26 @@
   ),
 )
 
-
-
-== 자격증
-
-
-#one-col-entry(
-  content: [- CFA: 1차 합격 \(2019\)],
-)
 #v(design-entries-vertical-space-between-entries)
+// NO DATE, NO DEGREE
+
 #one-col-entry(
-  content: [- KOFIA: 투자자산운용사 \(2019\), 파생상품투자권유자문인력 \(2023\), 펀드투자권유자문인력 \(2022\)],
+  content: [
+    #strong[Certificates], 
+
+    #v(-design-text-leading)
+    #v(design-highlights-top-margin);#highlights([CFA: 1차 합격 \(2019\)],[KOFIA: 투자자산운용사 \(2019\), 파생상품투자권유자문인력 \(2023\), 펀드투자권유자문인력 \(2022\)],)
+  ],
 )
 
 
-== 경력
+
+== Work Experience
 
 
 #two-col-entry(
   left-content: [
-    #strong[트레이딩본부 매크로트레이딩팀 \(파트타임, 학업 병행\)], 메리츠증권 -- 서울, 대한민국
+    #strong[메리츠증권], 트레이딩본부 매크로트레이딩팀 \(파트타임, 학업 병행\)
   ],
   right-content: [
     2025년 1월 – 현재
@@ -558,7 +558,7 @@
 #v(design-entries-vertical-space-between-entries)
 #two-col-entry(
   left-content: [
-    #strong[금융 리서치 하계 인턴], Zero One AI -- 서울, 대한민국
+    #strong[Zero One AI], 금융 리서치 하계 인턴
   ],
   right-content: [
     2024년 7월 – 2024년 8월
@@ -573,7 +573,7 @@
 #v(design-entries-vertical-space-between-entries)
 #two-col-entry(
   left-content: [
-    #strong[마이데이터 사업부 서비스 기획자], 우리은행 -- 서울, 대한민국
+    #strong[우리은행], 마이데이터 사업부 서비스 기획자
   ],
   right-content: [
     2022년 7월 – 2024년 2월
@@ -588,7 +588,7 @@
 #v(design-entries-vertical-space-between-entries)
 #two-col-entry(
   left-content: [
-    #strong[지점 근무], 우리은행 -- 서울, 대한민국
+    #strong[우리은행], 지점 근무
   ],
   right-content: [
     2021년 9월 – 2022년 3월
@@ -603,7 +603,7 @@
 #v(design-entries-vertical-space-between-entries)
 #two-col-entry(
   left-content: [
-    #strong[퀀트 리서치 인턴], HaaFor Research Korea -- 서울, 대한민국
+    #strong[HaaFor Research Korea], 퀀트 리서치 인턴
   ],
   right-content: [
     2020년 6월 – 2020년 11월
@@ -617,7 +617,7 @@
 
 
 
-== 프로젝트
+== Projects
 
 
 
@@ -654,7 +654,7 @@
 
 
 
-== 추가정보
+== Additional Information
 
 
 #one-col-entry(
