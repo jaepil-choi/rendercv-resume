@@ -13,14 +13,14 @@ cv:
         end_date: present
         location: 서울, 대한민국
       - institution: WorldQuant Online University
-        area: 금융공학
+        area: Financial Engineering
         degree: 석사
         start_date: 2023-01
         end_date: present
         location: 온라인
       - institution: 성균관대학교
-        area: 글로벌경제
-        degree: '학사 (부전공: 인포매틱스)'
+        area: 'Global Economics, (부전공: Informatics)'
+        degree: '학사'
         start_date: 2013-03
         end_date: 2020-08
         location: 서울, 대한민국
@@ -96,6 +96,8 @@ design:
   entry_types:
     experience_entry:
       main_column_first_row_template: '**COMPANY**, POSITION'
+    education_entry:
+      main_column_first_row_template: '**INSTITUTION**, DEGREE, AREA'
   page:
     size: us-letter
     top_margin: 1cm
