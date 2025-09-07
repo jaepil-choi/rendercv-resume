@@ -4,6 +4,7 @@ cv:
   email: chljeffreyz@gmail.com
   phone: +82-10-2589-5000
   website:
+  photo: profile_picture.svg
   sections:
     Education & Certificates:
       - institution: KAIST College of Business
@@ -31,7 +32,7 @@ cv:
           - "KOFIA: Certified Investment Manager (2019); Certified Derivatives Investment Advisor (2023); Certified Fund Investment Advisor (2022)"
     Work Experience:
       - company: Meritz Securities
-        position: Macro Trading Team, Trading Division (Part-time, concurrent with studies)
+        position: Macro Trading Team, Trading Division (Part-time, concurrent with studies) - 7 months
         start_date: 2025-01
         end_date: 2025-07
         location: Seoul, South Korea
@@ -39,31 +40,30 @@ cv:
           - "Built a platform enabling in-house dealers to design global macro (Rates/Equity Index/Commodities/FX) strategies without coding, akin to entering Excel functions"
           - "Applied diverse object-oriented design patterns to make strategy/utility extensions easy; architected the system so data querying and pre/post-processing are configurable via settings (config) without code changes"
       - company: Zero One AI
-        position: Financial Research Summer Intern
+        position: Financial Research Summer Intern - 2 months
         start_date: 2024-07
         end_date: 2024-08
         location: Seoul, South Korea
         highlights:
           - "Built a scalable factor database using CRSP & Compustat (WRDS) based on AQR's 'Replication Crisis' paper; developed an extensible API wrapper to mass-process and standardize daily factor data via large-scale API documentation preprocessing"
       - company: Woori Bank
-        position: PM, MyData Service Department
+        position: PM, MyData Service Department - 1 year 8 months
         start_date: 2022-07
         end_date: 2024-02
         location: Seoul, South Korea
         highlights:
           - "Led development of a personalized data curation feature 'My Investment Story' within the MyData service. Authored storyboards, performed EDA with SQL/Python, and achieved an 11% push notification response rate post-launch (highest among >10k sends)"
-          - "Validated KPI uplift via A/B testing after launch"
           - "Defined onboarding KPIs, extracted data using SQL, and designed an admin dashboard to establish a performance monitoring framework"
       - company: Woori Bank
-        position: Branch Operations
+        position: Branch Operations / Training - 10 months
         start_date: 2021-09
-        end_date: 2022-03
+        end_date: 2022-06
         location: Seoul, South Korea
         highlights:
           - "Developed an Excel-based corporate lending KPI calculator that supported branch manager decision-making on loan execution"
           - "Submitted 30+ system/process improvement proposals to the in-house suggestion portal; received 2nd place Excellence Award (within 3 months of joining)"
       - company: HaaFor Research Korea
-        position: Quant Research Intern
+        position: Quant Research Intern - 6 months
         start_date: 2020-06
         end_date: 2020-11
         location: Seoul, South Korea
@@ -71,18 +71,26 @@ cv:
           - "Researched alternative data across 4,000+ U.S. equities and built new datasets leveraging patents, news, and online indicators to support fellow quants developing low-correlation alpha strategies"
           - "Developed long-short alpha strategies with daily rebalancing under market/sector/factor-neutral constraints"
     Projects:
-      - name: kor-quant-dataloader
+      - name: '[kor-quant-dataloader](https://www.placeholder.com/projects/1)'
         highlights:
           - "Developed a Python package for Korea equities (KRX) that removes survival bias and simplifies data loading"
           - "Returns data in long format (date–ticker index with factor columns) or wide format (date index with ticker columns) given a date range"
-      - name: qtrsch
+      - name: '[qtrsch](https://www.placeholder.com/projects/2)'
         highlights:
           - "Constructed Fama-French 5-factor model using Korea equity data and validated factor returns against FnGuide benchmarks"
           - "Decomposed returns using factor-based components and analyzed Group Neutralization effects"
           - "Conducted an in-depth study of PEAD (post-earnings announcement drift) in Korea and visualized cumulative returns around earnings announcements"
-      - name: "Academic Project: Analyzing Monetary Policy Committee Minutes Using Text Mining (2019)"
+      - name: '[Academic Project: Analyzing Monetary Policy Committee Minutes Using Text Mining (2019)](https://www.placeholder.com/projects/3)'
         highlights:
           - "Measured hawkish/dovish tone in Monetary Policy Committee minutes using text mining and analyzed correlation with policy rate changes"
+
+    Additional Information:
+      - label: Skills
+        details: 'Python, Oracle SQL, Git-flow, web scraping, MS Office'
+      - label: Languages
+        details: 'English (TOEIC 985, TOEIC Speaking 180), German (Zertifikat Deutsch B1)'
+      - label: Military Service
+        details: 'Auxiliary Police, Sergeant — honorably discharged (Sep 2014 - Jun 2016)'
 
 design:
   theme: engineeringresumes
@@ -91,6 +99,8 @@ design:
       main_column_first_row_template: '**COMPANY**, POSITION'
     education_entry:
       main_column_first_row_template: '**INSTITUTION**, DEGREE, AREA'
+  # entries:
+  #   show_time_spans_in: ["Work Experience"]
   page:
     size: us-letter
     top_margin: 1cm
@@ -104,6 +114,7 @@ design:
   header:
     name_font_family: Noto Sans
     connections_font_family: Noto Sans
+    photo_width: 2cm
   section_titles:
     font_family: Noto Sans
 
@@ -111,7 +122,7 @@ locale:
   language: en
   phone_number_format: international
   page_numbering_template: NAME - Page PAGE_NUMBER of TOTAL_PAGES
-  last_updated_date_template: Last updated in TODAY
+  last_updated_date_template: 'Last updated: TODAY'
   date_template: MONTH_ABBREVIATION YEAR
   month: month
   months: months
@@ -125,10 +136,10 @@ locale:
     - Mar
     - Apr
     - May
-    - June
-    - July
+    - Jun
+    - Jul
     - Aug
-    - Sept
+    - Sep
     - Oct
     - Nov
     - Dec
@@ -145,3 +156,8 @@ locale:
     - October
     - November
     - December
+
+rendercv_settings:
+  date: '2025-01-15'
+  render_command:
+  bold_keywords: []
