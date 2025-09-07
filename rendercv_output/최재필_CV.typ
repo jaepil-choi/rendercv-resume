@@ -3,7 +3,7 @@
 
 #let name = "최재필"
 #let locale-catalog-page-numbering-style = context { "최재필 - 페이지 " + str(here().page()) + " / " + str(counter(page).final().first()) + "" }
-#let locale-catalog-last-updated-date-style = "최종 업데이트: 2025년 9월"
+#let locale-catalog-last-updated-date-style = "최종 업데이트: 2025년 1월"
 #let locale-catalog-language = "ko"
 #let design-page-size = "us-letter"
 #let design-section-titles-font-size = 1.2em
@@ -27,7 +27,7 @@
 #let design-text-font-family = "Noto Sans"
 #let design-text-alignment = "left"
 #let design-text-date-and-location-column-alignment = right
-#let design-header-photo-width = 3.5cm
+#let design-header-photo-width = 2cm
 #let design-header-use-icons-for-connections = false
 #let design-header-name-font-family = "Noto Sans"
 #let design-header-name-font-size = 25pt
@@ -313,7 +313,7 @@
     let ending-index = starting-index + 1
     while (
       measure(connections-list.slice(starting-index, ending-index).join(separator)).width
-        < page.width - left-sum-right-margin
+        < page.width - left-sum-right-margin - design-header-photo-width * 1.1
     ) {
       ending-index = ending-index + 1
       if ending-index > connections-list.len() {
@@ -447,6 +447,17 @@
   )
 ]
 
+#two-col(
+  left-column-width: design-header-photo-width * 1.1,
+  right-column-width: 1fr,
+  left-content: [
+    #align(
+      left + horizon,
+      image("profile_picture.svg", width: design-header-photo-width),
+    )
+  ],
+  column-gutter: 0cm,
+  right-content: [
 = 최재필
 
 // Print connections:
@@ -457,6 +468,8 @@
 )
 #connections(connections-list)
 
+  ],
+)
 
 
 == Education & Certificates
@@ -543,7 +556,7 @@
 
 #two-col-entry(
   left-content: [
-    #strong[메리츠증권], 트레이딩본부 매크로트레이딩팀 \(파트타임, 학업 병행\)
+    #strong[메리츠증권], 트레이딩본부 매크로트레이딩팀 \(파트타임, 학업 병행\) - 7개월
   ],
   right-content: [
     2025년 1월 – 2025년 7월
@@ -558,7 +571,7 @@
 #v(design-entries-vertical-space-between-entries)
 #two-col-entry(
   left-content: [
-    #strong[Zero One AI], 금융 리서치 하계 인턴
+    #strong[Zero One AI], 금융 리서치 하계 인턴 - 2개월
   ],
   right-content: [
     2024년 7월 – 2024년 8월
@@ -573,7 +586,7 @@
 #v(design-entries-vertical-space-between-entries)
 #two-col-entry(
   left-content: [
-    #strong[우리은행], 마이데이터 사업부 서비스 기획자
+    #strong[우리은행], 마이데이터 사업부 서비스 기획자 - 1년 8개월
   ],
   right-content: [
     2022년 7월 – 2024년 2월
@@ -581,17 +594,17 @@
 )
 #one-col-entry(
   content: [
-    #v(design-highlights-top-margin);#highlights([마이데이터 서비스 내 '내 투자 스토리' 개인화 데이터 큐레이션 기능 개발 주도. 스토리보드 작성, SQL\/Python 기반 EDA 수행 및 기능 출시 후 푸시 알림 응답률 11\% 달성\(1만 건 이상 발송 푸시 중 최고\)],[출시 후 A\/B 테스트를 통해 KPI 개선 효과 통계적 검증],[가입 관련 KPI 정의, SQL 활용 데이터 추출, 관리자 대시보드 설계를 통한 성과 모니터링 체계 구축],)
+    #v(design-highlights-top-margin);#highlights([마이데이터 서비스 내 '내 투자 스토리' 개인화 데이터 큐레이션 기능 개발 주도. 스토리보드 작성, SQL\/Python 기반 EDA 수행 및 기능 출시 후 푸시 알림 응답률 11\% 달성\(1만 건 이상 발송 푸시 중 최고\)],[가입 관련 KPI 정의, A\/B 테스트, SQL 활용 데이터 추출, 관리자 대시보드 설계를 통한 성과 모니터링 체계 구축],)
   ],
 )
 
 #v(design-entries-vertical-space-between-entries)
 #two-col-entry(
   left-content: [
-    #strong[우리은행], 지점 근무
+    #strong[우리은행], 지점 근무 \/ 연수 - 10개월
   ],
   right-content: [
-    2021년 9월 – 2022년 3월
+    2021년 9월 – 2022년 6월
   ],
 )
 #one-col-entry(
@@ -603,7 +616,7 @@
 #v(design-entries-vertical-space-between-entries)
 #two-col-entry(
   left-content: [
-    #strong[HaaFor Research Korea], 퀀트 리서치 인턴
+    #strong[HaaFor Research Korea], 퀀트 리서치 인턴 - 6개월
   ],
   right-content: [
     2020년 6월 – 2020년 11월
@@ -623,7 +636,7 @@
 
 #one-col-entry(
   content: [
-    #strong[kor-quant-dataloader] 
+    #link("https://www.placeholder.com/projects/1")[#strong[kor-quant-dataloader]] 
 
     #v(-design-text-leading)
     #v(design-highlights-top-margin);#highlights([생존 편향을 제거하고 데이터 로드 편의성을 높인 한국 주식 데이터셋 파이썬 패키지 개발 \(KRX 데이터\)],[날짜 범위만 지정하면 long format: 날짜-종목 인덱스, 각종 팩터 컬럼 형식 또는 wide format: 날짜 인덱스, 종목 컬럼 형식으로 데이터 반환],)
@@ -634,7 +647,7 @@
 
 #one-col-entry(
   content: [
-    #strong[qtrsch] 
+    #link("https://www.placeholder.com/projects/2")[#strong[qtrsch]] 
 
     #v(-design-text-leading)
     #v(design-highlights-top-margin);#highlights([한국 주식 데이터로 파마-프렌치 5요인 모형 직접 구축 후 FnGuide 벤치마크와 팩터 수익률 검증],[팩터 기반 요소로 수익률 분해, Group Neutralization 효과 분석],[한국 시장에서 PEAD\(실적발표 후 주가이상현상\) 현상 심층 분석 및 실적 발표 전후 누적 수익률 시각화],)
@@ -645,7 +658,7 @@
 
 #one-col-entry(
   content: [
-    #strong[학술 논문 구현: 텍스트 마이닝을 활용한 금융통화위원회 의사록 분석 \(2019\)] 
+    #link("https://www.placeholder.com/projects/3")[#strong[학술 논문 구현: 텍스트 마이닝을 활용한 금융통화위원회 의사록 분석 \(2019\)]] 
 
     #v(-design-text-leading)
     #v(design-highlights-top-margin);#highlights([텍스트 마이닝 기법으로 금융통화위원회 의사록의 톤\(매파\/비둘기파\)을 측정하고 정책금리 변동과의 상관관계 분석],)

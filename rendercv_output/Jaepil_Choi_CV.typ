@@ -3,7 +3,7 @@
 
 #let name = "Jaepil Choi"
 #let locale-catalog-page-numbering-style = context { "Jaepil Choi - Page " + str(here().page()) + " of " + str(counter(page).final().first()) + "" }
-#let locale-catalog-last-updated-date-style = "Last updated in Sept 2025"
+#let locale-catalog-last-updated-date-style = "Last updated: Jan 2025"
 #let locale-catalog-language = "en"
 #let design-page-size = "us-letter"
 #let design-section-titles-font-size = 1.2em
@@ -27,7 +27,7 @@
 #let design-text-font-family = "Noto Sans"
 #let design-text-alignment = "left"
 #let design-text-date-and-location-column-alignment = right
-#let design-header-photo-width = 3.5cm
+#let design-header-photo-width = 2cm
 #let design-header-use-icons-for-connections = false
 #let design-header-name-font-family = "Noto Sans"
 #let design-header-name-font-size = 25pt
@@ -313,7 +313,7 @@
     let ending-index = starting-index + 1
     while (
       measure(connections-list.slice(starting-index, ending-index).join(separator)).width
-        < page.width - left-sum-right-margin
+        < page.width - left-sum-right-margin - design-header-photo-width * 1.1
     ) {
       ending-index = ending-index + 1
       if ending-index > connections-list.len() {
@@ -447,6 +447,17 @@
   )
 ]
 
+#two-col(
+  left-column-width: design-header-photo-width * 1.1,
+  right-column-width: 1fr,
+  left-content: [
+    #align(
+      left + horizon,
+      image("profile_picture.svg", width: design-header-photo-width),
+    )
+  ],
+  column-gutter: 0cm,
+  right-content: [
 = Jaepil Choi
 
 // Print connections:
@@ -457,6 +468,8 @@
 )
 #connections(connections-list)
 
+  ],
+)
 
 
 == Education & Certificates
@@ -543,10 +556,10 @@
 
 #two-col-entry(
   left-content: [
-    #strong[Meritz Securities], Macro Trading Team, Trading Division \(Part-time, concurrent with studies\)
+    #strong[Meritz Securities], Macro Trading Team, Trading Division \(Part-time, concurrent with studies\) - 7 months
   ],
   right-content: [
-    Jan 2025 – July 2025
+    Jan 2025 – Jul 2025
   ],
 )
 #one-col-entry(
@@ -558,10 +571,10 @@
 #v(design-entries-vertical-space-between-entries)
 #two-col-entry(
   left-content: [
-    #strong[Zero One AI], Financial Research Summer Intern
+    #strong[Zero One AI], Financial Research Summer Intern - 2 months
   ],
   right-content: [
-    July 2024 – Aug 2024
+    Jul 2024 – Aug 2024
   ],
 )
 #one-col-entry(
@@ -573,25 +586,25 @@
 #v(design-entries-vertical-space-between-entries)
 #two-col-entry(
   left-content: [
-    #strong[Woori Bank], PM, MyData Service Department
+    #strong[Woori Bank], PM, MyData Service Department - 1 year 8 months
   ],
   right-content: [
-    July 2022 – Feb 2024
+    Jul 2022 – Feb 2024
   ],
 )
 #one-col-entry(
   content: [
-    #v(design-highlights-top-margin);#highlights([Led development of a personalized data curation feature 'My Investment Story' within the MyData service. Authored storyboards, performed EDA with SQL\/Python, and achieved an 11\% push notification response rate post-launch \(highest among >10k sends\)],[Validated KPI uplift via A\/B testing after launch],[Defined onboarding KPIs, extracted data using SQL, and designed an admin dashboard to establish a performance monitoring framework],)
+    #v(design-highlights-top-margin);#highlights([Led development of a personalized data curation feature 'My Investment Story' within the MyData service. Authored storyboards, performed EDA with SQL\/Python, and achieved an 11\% push notification response rate post-launch \(highest among >10k sends\)],[Defined onboarding KPIs, extracted data using SQL, and designed an admin dashboard to establish a performance monitoring framework],)
   ],
 )
 
 #v(design-entries-vertical-space-between-entries)
 #two-col-entry(
   left-content: [
-    #strong[Woori Bank], Branch Operations
+    #strong[Woori Bank], Branch Operations \/ Training - 10 months
   ],
   right-content: [
-    Sept 2021 – Mar 2022
+    Sep 2021 – Jun 2022
   ],
 )
 #one-col-entry(
@@ -603,10 +616,10 @@
 #v(design-entries-vertical-space-between-entries)
 #two-col-entry(
   left-content: [
-    #strong[HaaFor Research Korea], Quant Research Intern
+    #strong[HaaFor Research Korea], Quant Research Intern - 6 months
   ],
   right-content: [
-    June 2020 – Nov 2020
+    Jun 2020 – Nov 2020
   ],
 )
 #one-col-entry(
@@ -623,7 +636,7 @@
 
 #one-col-entry(
   content: [
-    #strong[kor-quant-dataloader] 
+    #link("https://www.placeholder.com/projects/1")[#strong[kor-quant-dataloader]] 
 
     #v(-design-text-leading)
     #v(design-highlights-top-margin);#highlights([Developed a Python package for Korea equities \(KRX\) that removes survival bias and simplifies data loading],[Returns data in long format \(date–ticker index with factor columns\) or wide format \(date index with ticker columns\) given a date range],)
@@ -634,7 +647,7 @@
 
 #one-col-entry(
   content: [
-    #strong[qtrsch] 
+    #link("https://www.placeholder.com/projects/2")[#strong[qtrsch]] 
 
     #v(-design-text-leading)
     #v(design-highlights-top-margin);#highlights([Constructed Fama-French 5-factor model using Korea equity data and validated factor returns against FnGuide benchmarks],[Decomposed returns using factor-based components and analyzed Group Neutralization effects],[Conducted an in-depth study of PEAD \(post-earnings announcement drift\) in Korea and visualized cumulative returns around earnings announcements],)
@@ -645,12 +658,28 @@
 
 #one-col-entry(
   content: [
-    #strong[Academic Project: Analyzing Monetary Policy Committee Minutes Using Text Mining \(2019\)] 
+    #link("https://www.placeholder.com/projects/3")[#strong[Academic Project: Analyzing Monetary Policy Committee Minutes Using Text Mining \(2019\)]] 
 
     #v(-design-text-leading)
     #v(design-highlights-top-margin);#highlights([Measured hawkish\/dovish tone in Monetary Policy Committee minutes using text mining and analyzed correlation with policy rate changes],)
   ],
 )
 
+
+
+== Additional Information
+
+
+#one-col-entry(
+  content: [#strong[Skills:] Python, Oracle SQL, Git-flow, web scraping, MS Office]
+)
+#v(design-entries-vertical-space-between-entries)
+#one-col-entry(
+  content: [#strong[Languages:] English \(TOEIC 985, TOEIC Speaking 180\), German \(Zertifikat Deutsch B1\)]
+)
+#v(design-entries-vertical-space-between-entries)
+#one-col-entry(
+  content: [#strong[Military Service:] Auxiliary Police, Sergeant — honorably discharged \(Sep 2014 - Jun 2016\)]
+)
 
 
