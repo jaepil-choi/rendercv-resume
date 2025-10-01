@@ -1,0 +1,43 @@
+{
+  "title": "Position Title. e.g) 신영증권 2024년 하계 인턴 공개 채용",
+  "company": "Company Name. e.g) 신영증권",
+  "department": "Department Name. e.g) 포트폴리오 솔루션부",
+  "job_title": "Job Title.",
+  "date": "YYYY-MM-DD",
+  "job_post": {
+    "url": "URL of the job post",
+    "content": "The standard Lorem Ipsum passage, used since the 1500s\n\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\""
+  },
+  "initial_application": {
+    "result": "Pass/Fail",
+    "questions_and_answers": [
+      {
+        "question": "e.g) 지원동기가 무엇인가요?",
+        "answer": "e.g) 저는 회사의 비즈니스 모델과 저의 역량이 맞다고 생각합니다."
+      },
+      {
+        "question": "e.g) 입사 후 포부가 무엇인가요?",
+        "answer": "e.g) 입사 후 회사의 비즈니스 모델과 저의 역량을 발휘하여 회사의 성장에 기여하겠습니다."
+      }
+    ]
+  },
+  "interviews": [
+    {
+      "round": 1,
+      "result": "Pass/Fail"
+    },
+    {
+      "round": 2,
+      "result": "Pass/Fail"
+    },
+    {
+      "round": 3,
+      "result": "Pass/Fail"
+    }
+  ], 
+  "meta": {
+    "schema_version": "1.0.0"
+  }
+}
+
+
