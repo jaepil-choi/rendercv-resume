@@ -1,0 +1,27 @@
+name: quant-focused-en
+locale: en
+base_file: base_en.yaml
+sections:
+  Education & Certificates:
+    include_ids:
+      - kaist
+      - worldquant
+    max_items: 2
+  Work Experience:
+    include_ids:
+      - meritz-macro-trading
+      - zero-one-ai
+      - haafor-research
+    max_items: 3
+  Projects:
+    include_ids:
+      - krx-quant-dataloader
+      - qtrsch
+    max_items: 2
+  Additional Information:
+    include_ids:
+      - skills
+      - languages
+    max_items: 2
+output_file: Jaepil_Choi_CV_quant_en.yaml
+

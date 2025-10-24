@@ -1,0 +1,14 @@
+id: skills
+type: additional_info
+tags: [technical]
+priority: 1
+data:
+  label:
+    en: Skills
+    kr: 기술
+  details:
+    en: 'Python, Oracle SQL, Git-flow, web scraping, MS Office'
+    kr: 'Python, Oracle SQL, Git-flow, 웹 스크래핑, MS-Office'
+
+
+

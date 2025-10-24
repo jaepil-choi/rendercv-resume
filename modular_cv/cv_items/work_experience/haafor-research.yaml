@@ -1,0 +1,26 @@
+id: haafor-research
+type: work_experience
+tags:
+- quant
+- research
+- alternative-data
+- trading
+priority: 5
+data:
+  company:
+    en: HaaFor Research Korea
+    kr: HaaFor Research Korea
+  position:
+    en: Quant Research Intern - 6 months
+    kr: 퀀트 리서치 인턴 - 6개월
+  start_date: 2020-06
+  end_date: 2020-11
+  location:
+    en: Seoul, South Korea
+    kr: 서울, 대한민국
+  highlights:
+  - en: Researched alternative data across 4,000+ U.S. equities and built new datasets leveraging patents, news, and online
+      indicators to support fellow quants developing low-correlation alpha strategies
+    kr: 미국 주식 4,000+ 종목에 대한 대체 데이터 리서치 및 특허·뉴스·온라인 지표 활용 신규 데이터셋 구축해 다른 퀀트 리서쳐들의 상관관계 낮은 알파 전략 개발 지원
+  - en: Developed long-short alpha strategies with daily rebalancing under market/sector/factor-neutral constraints
+    kr: 일단위 리밸런싱 주기의 시장/섹터/팩터 중립적인 롱숏 알파 전략 개발 경험

@@ -1,0 +1,22 @@
+id: kaist
+type: education
+tags: [masters, finance, engineering]
+priority: 1
+data:
+  institution:
+    en: KAIST College of Business
+    kr: KAIST 경영대학
+  area:
+    en: Financial Engineering
+    kr: 금융공학
+  degree:
+    en: Master's
+    kr: 석사
+  start_date: '2024-03'
+  end_date: present
+  location:
+    en: Seoul, South Korea
+    kr: 서울, 대한민국
+
+
+

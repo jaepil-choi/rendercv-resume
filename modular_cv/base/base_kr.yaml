@@ -1,0 +1,76 @@
+cv:
+  name: 최재필
+  location: 서울, 대한민국
+  email: chljeffreyz@gmail.com
+  phone: +82-10-2589-5000
+  website:
+  photo: profile_picture.svg
+
+design:
+  theme: engineeringresumes
+  entry_types:
+    experience_entry:
+      main_column_first_row_template: '**COMPANY**, POSITION'
+    education_entry:
+      main_column_first_row_template: '**INSTITUTION**, DEGREE, AREA'
+  page:
+    size: us-letter
+    top_margin: 1cm
+    bottom_margin: 1cm
+    left_margin: 1cm
+    right_margin: 1cm
+    show_page_numbering: false
+  text:
+    alignment: left
+    font_family: Noto Sans
+  header:
+    name_font_family: Noto Sans
+    connections_font_family: Noto Sans
+    photo_width: 2cm
+  section_titles:
+    font_family: Noto Sans
+
+locale:
+  language: ko
+  phone_number_format: national
+  page_numbering_template: 'NAME - 페이지 PAGE_NUMBER / TOTAL_PAGES'
+  last_updated_date_template: '최종 업데이트: TODAY'
+  date_template: 'YEAR년 MONTH월'
+  month: 월
+  months: 개월
+  year: 년
+  years: 년
+  present: 현재
+  to: '–'
+  abbreviations_for_months:
+    - 1월
+    - 2월
+    - 3월
+    - 4월
+    - 5월
+    - 6월
+    - 7월
+    - 8월
+    - 9월
+    - 10월
+    - 11월
+    - 12월
+  full_names_of_months:
+    - 1월
+    - 2월
+    - 3월
+    - 4월
+    - 5월
+    - 6월
+    - 7월
+    - 8월
+    - 9월
+    - 10월
+    - 11월
+    - 12월
+
+rendercv_settings:
+  date: '2025-09-22'
+  render_command:
+  bold_keywords: []
+
