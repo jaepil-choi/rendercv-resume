@@ -1,0 +1,22 @@
+id: worldquant
+type: education
+tags: [masters, finance, engineering, online]
+priority: 2
+data:
+  institution:
+    en: WorldQuant Online University
+    kr: WorldQuant Online University
+  area:
+    en: Financial Engineering
+    kr: Financial Engineering
+  degree:
+    en: Master's
+    kr: 석사
+  start_date: '2023-01'
+  end_date: present
+  location:
+    en: Online
+    kr: 온라인
+
+
+

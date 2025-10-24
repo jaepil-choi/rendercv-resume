@@ -1,0 +1,22 @@
+id: skku
+type: education
+tags: [bachelors, economics]
+priority: 3
+data:
+  institution:
+    en: Sungkyunkwan University
+    kr: 성균관대학교
+  area:
+    en: 'Global Economics (Minor: Informatics)'
+    kr: 'Global Economics, (부전공: Informatics)'
+  degree:
+    en: Bachelor's
+    kr: 학사
+  start_date: '2013-03'
+  end_date: '2020-08'
+  location:
+    en: Seoul, South Korea
+    kr: 서울, 대한민국
+
+
+

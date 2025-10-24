@@ -1,0 +1,20 @@
+id: qtrsch
+type: project
+tags:
+- quant
+- research
+- factor-modeling
+- python
+priority: 2
+data:
+  name:
+    en: '[qtrsch](https://www.placeholder.com/projects/2)'
+    kr: '[qtrsch](https://www.placeholder.com/projects/2)'
+  highlights:
+  - en: Constructed Fama-French 5-factor model using Korea equity data and validated factor returns against FnGuide benchmarks
+    kr: 한국 주식 데이터로 파마-프렌치 5요인 모형 직접 구축 후 FnGuide 벤치마크와 팩터 수익률 검증
+  - en: Decomposed returns using factor-based components and analyzed Group Neutralization effects
+    kr: 팩터 기반 요소로 수익률 분해, Group Neutralization 효과 분석
+  - en: Conducted an in-depth study of PEAD (post-earnings announcement drift) in Korea and visualized cumulative returns
+      around earnings announcements
+    kr: 한국 시장에서 PEAD(실적발표 후 주가이상현상) 현상 심층 분석 및 실적 발표 전후 누적 수익률 시각화

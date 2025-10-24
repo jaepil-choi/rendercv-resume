@@ -1,0 +1,19 @@
+id: krx-quant-dataloader
+type: project
+tags:
+- quant
+- python
+- data-engineering
+- open-source
+priority: 1
+data:
+  name:
+    en: '[krx-quant-dataloader](https://github.com/jaepil-choi/krx-quant-dataloader)'
+    kr: '[krx-quant-dataloader](https://github.com/jaepil-choi/krx-quant-dataloader)'
+  highlights:
+  - en: Developed a Python library that retrieves Korean stock market data from KRX and returns quant-ready DataFrames (wide-format
+      date × ticker) for research and backtesting
+    kr: KRX에서 한국 주식시장 데이터를 수집해 정량 연구·백테스팅에 적합한 wide-format(날짜 × 종목) DataFrame으로 제공하는 파이썬 라이브러리 개발
+  - en: Provides corporate-action-adjusted prices and a local Parquet DB with cached adjustment factors; supports survivorship-bias-free
+      dynamic universes (univ100/200/500/1000)
+    kr: 수정종가 및 조정계수 캐시를 갖춘 로컬 Parquet DB 제공, 생존 편향을 제거한 동적 유니버스(univ100/200/500/1000) 지원

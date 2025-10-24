@@ -1,0 +1,25 @@
+id: zero-one-ai
+type: work_experience
+tags:
+- research
+- quant
+- python
+- data-engineering
+priority: 2
+data:
+  company:
+    en: Zero One AI
+    kr: Zero One AI
+  position:
+    en: Financial Research Summer Intern - 2 months
+    kr: 금융 리서치 하계 인턴 - 2개월
+  start_date: 2024-07
+  end_date: 2024-08
+  location:
+    en: Seoul, South Korea
+    kr: 서울, 대한민국
+  highlights:
+  - en: Built a scalable factor database using CRSP & Compustat (WRDS) based on AQR's 'Replication Crisis' paper; developed
+      an extensible API wrapper to mass-process and standardize daily factor data via large-scale API documentation preprocessing
+    kr: AQR 'Replication Crisis' 논문 기반 CRSP & Compustat (WRDS)를 활용한 퀀트 팩터 DB 구축 및 대량 API 문서 전처리를 통한 일별 팩터 데이터 생산용 확장 가능한 API
+      래퍼 개발

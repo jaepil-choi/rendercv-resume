@@ -1,0 +1,29 @@
+id: woori-mydata
+type: work_experience
+tags:
+- product-management
+- data-analysis
+- sql
+- python
+priority: 3
+data:
+  company:
+    en: Woori Bank
+    kr: 우리은행
+  position:
+    en: PM, MyData Service Department - 1 year 8 months
+    kr: 마이데이터 사업부 서비스 기획자 - 1년 8개월
+  start_date: 2022-07
+  end_date: 2024-02
+  location:
+    en: Seoul, South Korea
+    kr: 서울, 대한민국
+  highlights:
+  - en: Led development of a personalized data curation feature 'My Investment Story' within the MyData service. Authored
+      storyboards, performed EDA with SQL/Python, and achieved an 11% push notification response rate post-launch (highest
+      among >10k sends)
+    kr: 마이데이터 서비스 내 '내 투자 스토리' 개인화 데이터 큐레이션 기능 개발 주도. 스토리보드 작성, SQL/Python 기반 EDA 수행 및 기능 출시 후 푸시 알림 응답률 11% 달성(1만 건 이상 발송
+      푸시 중 최고)
+  - en: Defined onboarding KPIs, extracted data using SQL, and designed an admin dashboard to establish a performance monitoring
+      framework
+    kr: 가입 관련 KPI 정의, A/B 테스트, SQL 활용 데이터 추출, 관리자 대시보드 설계를 통한 성과 모니터링 체계 구축

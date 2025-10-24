@@ -1,0 +1,76 @@
+cv:
+  name: Jaepil Choi
+  location: Seoul, South Korea
+  email: chljeffreyz@gmail.com
+  phone: +82-10-2589-5000
+  website:
+  photo: profile_picture.svg
+
+design:
+  theme: engineeringresumes
+  entry_types:
+    experience_entry:
+      main_column_first_row_template: '**COMPANY**, POSITION'
+    education_entry:
+      main_column_first_row_template: '**INSTITUTION**, DEGREE, AREA'
+  page:
+    size: us-letter
+    top_margin: 1cm
+    bottom_margin: 1cm
+    left_margin: 1cm
+    right_margin: 1cm
+    show_page_numbering: false
+  text:
+    alignment: left
+    font_family: Noto Sans
+  header:
+    name_font_family: Noto Sans
+    connections_font_family: Noto Sans
+    photo_width: 2cm
+  section_titles:
+    font_family: Noto Sans
+
+locale:
+  language: en
+  phone_number_format: international
+  page_numbering_template: NAME - Page PAGE_NUMBER of TOTAL_PAGES
+  last_updated_date_template: 'Last updated: TODAY'
+  date_template: MONTH_ABBREVIATION YEAR
+  month: month
+  months: months
+  year: year
+  years: years
+  present: present
+  to: –
+  abbreviations_for_months:
+    - Jan
+    - Feb
+    - Mar
+    - Apr
+    - May
+    - Jun
+    - Jul
+    - Aug
+    - Sep
+    - Oct
+    - Nov
+    - Dec
+  full_names_of_months:
+    - January
+    - February
+    - March
+    - April
+    - May
+    - June
+    - July
+    - August
+    - September
+    - October
+    - November
+    - December
+
+rendercv_settings:
+  date: '2025-01-15'
+  render_command:
+  bold_keywords: []
+

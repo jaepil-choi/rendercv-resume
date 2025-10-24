@@ -1,0 +1,20 @@
+id: certificates
+type: education
+tags: [certificates]
+priority: 4
+data:
+  institution:
+    en: Certificates
+    kr: Certificates
+  area:
+    en: ' '
+    kr: ' '
+  degree:
+    en: ' '
+    kr: ' '
+  highlights:
+    - en: 'CFA: Level I Passed (2019)'
+      kr: 'CFA: 1차 합격 (2019)'
+    - en: 'KOFIA: Certified Investment Manager (2019); Certified Derivatives Investment Advisor (2023); Certified Fund Investment Advisor (2022)'
+      kr: 'KOFIA: 투자자산운용사 (2019), 파생상품투자권유자문인력 (2023), 펀드투자권유자문인력 (2022)'
+

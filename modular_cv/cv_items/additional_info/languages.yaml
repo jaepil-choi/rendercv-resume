@@ -1,0 +1,14 @@
+id: languages
+type: additional_info
+tags: [languages]
+priority: 2
+data:
+  label:
+    en: Languages
+    kr: 언어
+  details:
+    en: 'English (TOEIC 985, TOEIC Speaking 180), German (Zertifikat Deutsch B1)'
+    kr: '영어 (TOEIC 985, TOEIC Speaking 180), 독일어 (Zertifikat Deutsch B1)'
+
+
+

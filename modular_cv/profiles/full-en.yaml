@@ -1,0 +1,33 @@
+name: full-en
+locale: en
+base_file: base_en.yaml
+sections:
+  Education & Certificates:
+    include_ids:
+      - kaist
+      - worldquant
+      - skku
+      - certificates
+    max_items: 4
+  Work Experience:
+    include_ids:
+      - meritz-macro-trading
+      - zero-one-ai
+      - woori-mydata
+      - woori-branch
+      - haafor-research
+    max_items: 5
+  Projects:
+    include_ids:
+      - krx-quant-dataloader
+      - qtrsch
+      - text-mining-mpc
+    max_items: 3
+  Additional Information:
+    include_ids:
+      - skills
+      - languages
+      - military
+    max_items: 3
+output_file: Jaepil_Choi_CV_en.yaml
+

@@ -1,0 +1,15 @@
+id: text-mining-mpc
+type: project
+tags:
+- nlp
+- text-mining
+- academic
+priority: 3
+data:
+  name:
+    en: '[Academic Project: Analyzing Monetary Policy Committee Minutes Using Text Mining (2019)](https://www.placeholder.com/projects/3)'
+    kr: '[학술 논문 구현: 텍스트 마이닝을 활용한 금융통화위원회 의사록 분석 (2019)](https://www.placeholder.com/projects/3)'
+  highlights:
+  - en: Measured hawkish/dovish tone in Monetary Policy Committee minutes using text mining and analyzed correlation with
+      policy rate changes
+    kr: 텍스트 마이닝 기법으로 금융통화위원회 의사록의 톤(매파/비둘기파)을 측정하고 정책금리 변동과의 상관관계 분석

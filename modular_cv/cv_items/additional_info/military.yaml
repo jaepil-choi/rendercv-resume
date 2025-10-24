@@ -1,0 +1,14 @@
+id: military
+type: additional_info
+tags: [military]
+priority: 3
+data:
+  label:
+    en: Military Service
+    kr: 병역
+  details:
+    en: 'Auxiliary Police, Sergeant — honorably discharged (Sep 2014 - Jun 2016)'
+    kr: '의무경찰 병장 만기전역 (2014년 9월 - 2016년 6월)'
+
+
+

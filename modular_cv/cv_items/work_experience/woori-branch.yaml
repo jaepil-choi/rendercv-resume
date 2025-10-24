@@ -1,0 +1,25 @@
+id: woori-branch
+type: work_experience
+tags:
+- banking
+- excel
+- process-improvement
+priority: 4
+data:
+  company:
+    en: Woori Bank
+    kr: 우리은행
+  position:
+    en: Branch Operations / Training - 10 months
+    kr: 지점 근무 / 연수 - 10개월
+  start_date: 2021-09
+  end_date: 2022-06
+  location:
+    en: Seoul, South Korea
+    kr: 서울, 대한민국
+  highlights:
+  - en: Developed an Excel-based corporate lending KPI calculator that supported branch manager decision-making on loan execution
+    kr: Excel 기반 기업대출 KPI 계산기를 개발하여, 지점장님의 기업 대출 실행 여부 의사결정 지원
+  - en: Submitted 30+ system/process improvement proposals to the in-house suggestion portal; received 2nd place Excellence
+      Award (within 3 months of joining)
+    kr: 사내 제안광장에 30건 이상의 시스템·프로세스 개선안을 올려 우수 제안상 2위 수상 (입사 후 3개월 이내)
