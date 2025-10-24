@@ -5,7 +5,7 @@ sections:
   Education & Certificates:
     include_ids:
       - kaist
-      - worldquant
+      - wqu
       - skku
       - certificates
     max_items: 4

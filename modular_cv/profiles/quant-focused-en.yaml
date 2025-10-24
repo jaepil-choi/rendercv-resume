@@ -5,7 +5,7 @@ sections:
   Education & Certificates:
     include_ids:
       - kaist
-      - worldquant
+      - wqu
     max_items: 2
   Work Experience:
     include_ids:
