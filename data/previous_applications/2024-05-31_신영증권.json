@@ -6,7 +6,7 @@
   "date": "2024-05-31",
   "job_post": null,
   "initial_application": {
-    "result": "Pass",
+    "result": "Passed",
     "questions_and_answers": [
       {
         "question": "자신의 성장과정을 되돌아보고 현재의 자신에게 가장 큰 영향을 준 사건이나 인물 및 그 이유를 서술해 주십시오.",
@@ -29,7 +29,7 @@
   "interviews": [
     {
       "round": 1,
-      "result": "Fail"
+      "result": "Withdrawn"
     }
   ],
   "meta": {
