@@ -1,0 +1,34 @@
+high_school:
+  myungduk_foreign_language_high_school:
+    name: 명덕외고
+    admission_date: "2009-03"
+    graduation_date: "2012-02"
+universities:
+  kaist:
+    name: 한국과학기술원
+    gpa: 
+      max: 4.3
+      total: 3.44
+      course_taken: 46.5
+    graduation_date: "-"
+    admission_date: "2024-03"
+  skku:
+    name: 성균관대학교
+    max: 4.5
+    total: 3.53
+    course_taken: 122
+    major:
+      score: 3.5
+      course_taken: 48
+    minor:
+      score: 3.58
+      course_taken: 39
+    graduation_date: "2020-08"
+    admission_date: "2013-03"
+  wqu:
+    name: WorldQuant Online University
+    admission_date: "2023-01"
+    graduation_date: "present"
+
+
+  

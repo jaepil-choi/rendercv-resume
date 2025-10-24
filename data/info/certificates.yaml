@@ -1,0 +1,48 @@
+english:
+  toeic:
+    score: 975
+    date: 2025-08-10
+    code: 150702
+  toeic_speaking:
+    score: 160
+    level: AL
+    date: 2025-08-03
+    code: 103216
+  opic:
+    level: IH
+    date: 2025-07-29
+    code: 2A9502527504
+certificates:
+  cfa: 
+    level: Level I
+    date: 2019-12-07
+    code: 8998354
+    institution: CFA Institute
+  투자자산운용사:
+    date: 2019-12-05
+    code: 19-022305
+    institution: 금융투자협회
+  펀드투자권유자문인력:
+    date: 2022-12-22
+    code: 22-019060
+    institution: 금융투자협회
+  파생상품투자권유자문인력:
+    date: 2023-06-01
+    code: 23-008669
+    institution: 금융투자협회
+awards:
+  우리제안광장_우수직원포상:
+    date: 2021-12-22
+    institution: 우리은행
+    reason: "전산 오류, 개선사항 제안 등 사내 제안광장 제안 점수 2위로 우수직원 선정 및 포상"
+activities:
+  KSIF(카이스트학생투자펀드):
+    start_date: 2024-09
+    end_date: present
+    achievements:
+    - "학생투자펀드 전략 리스크 보고를 위해 기존 전략의 팩터 기여도 및 팩터 노출도 계산"
+    - "AQR의 논문을 구현하여 모멘텀 전략에서 섹터 배팅을 없애는 전략 구현"
+skills:
+  - Python
+  - Oracle SQL
+  - Git
