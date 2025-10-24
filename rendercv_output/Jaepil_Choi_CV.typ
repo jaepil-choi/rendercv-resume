@@ -542,7 +542,7 @@
 
 #one-col-entry(
   content: [
-    #strong[Certificates], 
+    #strong[Certificates],  
 
     #v(-design-text-leading)
     #v(design-highlights-top-margin);#highlights([CFA: Level I Passed \(2019\)],[KOFIA: Certified Investment Manager \(2019\); Certified Derivatives Investment Advisor \(2023\); Certified Fund Investment Advisor \(2022\)],)
@@ -636,10 +636,10 @@
 
 #one-col-entry(
   content: [
-    #link("https://www.placeholder.com/projects/1")[#strong[kor-quant-dataloader]] 
+    #link("https://github.com/jaepil-choi/krx-quant-dataloader")[#strong[krx-quant-dataloader]] 
 
     #v(-design-text-leading)
-    #v(design-highlights-top-margin);#highlights([Developed a Python package for Korea equities \(KRX\) that removes survival bias and simplifies data loading],[Returns data in long format \(date–ticker index with factor columns\) or wide format \(date index with ticker columns\) given a date range],)
+    #v(design-highlights-top-margin);#highlights([Developed a Python library that retrieves Korean stock market data from KRX and returns quant-ready DataFrames \(wide-format date × ticker\) for research and backtesting],[Provides corporate-action-adjusted prices and a local Parquet DB with cached adjustment factors; supports survivorship-bias-free dynamic universes \(univ100\/200\/500\/1000\)],)
   ],
 )
 

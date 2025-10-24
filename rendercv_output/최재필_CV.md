@@ -22,7 +22,7 @@
 - 2013년 3월 – 2020년 8월
 - 서울, 대한민국
 
-## Certificates, 
+## Certificates,   in  
 
 - CFA: 1차 합격 (2019)
 - KOFIA: 투자자산운용사 (2019), 파생상품투자권유자문인력 (2023), 펀드투자권유자문인력 (2022)
@@ -65,10 +65,10 @@
 
 # Projects
 
-## [kor-quant-dataloader](https://www.placeholder.com/projects/1)
+## [krx-quant-dataloader](https://github.com/jaepil-choi/krx-quant-dataloader)
 
-- 생존 편향을 제거하고 데이터 로드 편의성을 높인 한국 주식 데이터셋 파이썬 패키지 개발 (KRX 데이터)
-- 날짜 범위만 지정하면 long format: 날짜-종목 인덱스, 각종 팩터 컬럼 형식 또는 wide format: 날짜 인덱스, 종목 컬럼 형식으로 데이터 반환
+- KRX에서 한국 주식시장 데이터를 수집해 정량 연구·백테스팅에 적합한 wide-format(날짜 × 종목) DataFrame으로 제공하는 파이썬 라이브러리 개발
+- 수정종가 및 조정계수 캐시를 갖춘 로컬 Parquet DB 제공, 생존 편향을 제거한 동적 유니버스(univ100/200/500/1000) 지원
 
 ## [qtrsch](https://www.placeholder.com/projects/2)
 

@@ -22,7 +22,7 @@
 - Mar 2013 – Aug 2020
 - Seoul, South Korea
 
-## Certificates, 
+## Certificates,   in  
 
 - CFA: Level I Passed (2019)
 - KOFIA: Certified Investment Manager (2019); Certified Derivatives Investment Advisor (2023); Certified Fund Investment Advisor (2022)
@@ -65,10 +65,10 @@
 
 # Projects
 
-## [kor-quant-dataloader](https://www.placeholder.com/projects/1)
+## [krx-quant-dataloader](https://github.com/jaepil-choi/krx-quant-dataloader)
 
-- Developed a Python package for Korea equities (KRX) that removes survival bias and simplifies data loading
-- Returns data in long format (date–ticker index with factor columns) or wide format (date index with ticker columns) given a date range
+- Developed a Python library that retrieves Korean stock market data from KRX and returns quant-ready DataFrames (wide-format date × ticker) for research and backtesting
+- Provides corporate-action-adjusted prices and a local Parquet DB with cached adjustment factors; supports survivorship-bias-free dynamic universes (univ100/200/500/1000)
 
 ## [qtrsch](https://www.placeholder.com/projects/2)
 
