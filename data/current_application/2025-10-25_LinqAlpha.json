@@ -1,0 +1,40 @@
+{
+  "title": "2025 하반기 LinqAlpha Fundamental Research Engineer / AI Research Engineer 채용",
+  "company": "LinqAlpha",
+  "department": "Fundamental Research Engineer (FRE Team)",
+  "job_title": "정규직 / 채용전환형 인턴",
+  "date": "2025-10-25",
+  "job_post": {
+    "url": "",
+    "content": "2025 하반기 미국 금융AI 스타트업 LinqAlpha 채용 공고\n\n회사 소개:\nLinqAlpha는 MIT 컴퓨터공학 박사, 골드만삭스 뱅커, Forbes 30 Under 30 출신들이 공동창업한 보스턴 기반 금융 AI 스타트업입니다. 당사 임베딩 AI 모델은 2024년 NVIDIA, Google, OpenAI를 제치고 Hugging Face Leaderboard 1위를 달성했고 연초 Techstars, 에이티넘, 인터베스트, 카카오벤처스 등으로부터 시드 약 80억원을 유치했습니다.\n\nAI 투자 리서치 플랫폼으로서 뉴욕, 홍콩, 싱가폴을 거점으로 골드만삭스, Schonfeld 등 170개의 글로벌 헤지펀드, 자산운용사, 투자은행에 제공되고 있습니다.\n\n근무 조건:\n- 급여: 면접 후 협의\n- 장소: 강남역/양재역 사이 랜드마크 타워 21층\n- 형태: 정규직 채용 및 채용전환형 인턴\n\n=== Fundamental Research Engineer (FRE Team) ===\n\n미션:\n정량적 금융 리서치를 자동화하고 데이터 중심의 투자 인사이트를 구현하는 워크플로우를 개발합니다.\n\n필요 역량:\n- AI와 금융의 교차점에서 정량적 리서치를 설계하고 구현하고 싶은 졸업(예정)자\n- 경영학, 통계학, 금융공학 등 정량적 배경을 갖추고 Python으로 데이터 분석이 가능한 분\n- 금융 데이터의 의미를 이해하고 기술적으로 다룰 수 있는 분\n- 데이터 처리와 리서치 로직을 연결할 수 있는 분\n\n우대 사항:\n- 금융 데이터 분석·자동화 경험\n- 자연어 처리 기반 공시·리포트 분석 경험\n- Python 기반 리서치 워크플로우 구현\n- RDB 및 text-to-SQL 자동화 경험\n- 데이터 QA 및 모델 평가 자동화 경험\n\n주요 업무:\n- 금융 전문가의 리서치 아이디어를 Python 워크플로우로 구현\n- LLM 기반 NLP 프로세스 세분화·최적화\n- JSON 데이터 추출 및 데이터베이스 저장 자동화\n- text-to-SQL 질의 자동화\n- QA 및 성능 개선 스크립트 설계\n- 정형·비정형 데이터를 아우르는 분석 워크플로우 개발\n\n=== AI Research Engineer (AI Research / Alt Data Team) ===\n\n미션:\n대체데이터(Alt Data)와 AI를 활용해 새로운 금융 분석 패러다임을 탐구하고 모델링합니다.\n\n필요 역량:\n- AI가 금융 데이터를 해석하고 새로운 인사이트를 도출하는 과정에 흥미가 있는 졸업(예정)자\n- Python 기반 데이터 분석 및 모델링 경험자\n- 통계적 사고를 통해 데이터를 검증할 수 있는 분\n- 대체 데이터(Alt Data)를 활용한 금융 분석에 관심 있는 분\n\n우대 사항:\n- 재무·회계·금융공학·수학·통계학 석·박사\n- 정형·비정형 금융 데이터(공시·뉴스·SNS 등) 분석 경험\n- 머신러닝·LLM 기반 정량 연구 수행 경험\n- 금융 데이터셋 구축 및 평가 경험\n- 학술 논문 또는 프로젝트 결과물 발표 경험\n\n주요 업무:\n- 시장·재무·뉴스·대체 데이터를 기반으로 분석 및 모델링 전략 설계\n- Python·LLM을 활용한 데이터 수집·정제·분석 자동화\n- 데이터 세팅부터 LLM으로 추출 및 평가, 해석까지 end-to-end 연구 주도\n- 내부 리서치 성과를 제품화 가능한 형태로 구조화"
+  },
+  "initial_application": {
+    "result": "",
+    "questions_and_answers": [
+      {
+        "question": "이력서 및 포트폴리오 제출 (코딩 테스트 진행 예정)",
+        "answer": ""
+      }
+    ]
+  },
+  "interviews": [
+    {
+      "round": 1,
+      "type": "코딩 테스트 (LLM 활용 허용)",
+      "result": ""
+    },
+    {
+      "round": 2,
+      "type": "기술 면접",
+      "result": ""
+    },
+    {
+      "round": 3,
+      "type": "최종 면접",
+      "result": ""
+    }
+  ],
+  "meta": {
+    "schema_version": "1.0.0"
+  }
+}
